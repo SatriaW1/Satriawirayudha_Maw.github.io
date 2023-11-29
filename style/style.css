@@ -1,0 +1,338 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: sans-serif;
+    
+}
+a {
+    color: inherit;
+    text-decoration: none;
+}
+/* bagian logo akun*/
+.medsos {
+    padding: 5px 0;
+    background-color:  #148f77;
+}
+.medsos ul li {
+    display: inline-block;
+    color: #fcfdfd;
+    margin: 10px;
+}
+
+/* bagian isi yang dibungkus class container*/
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+.container:after {
+    content: " " ;
+    display: block;
+    clear: both;
+}
+
+/* bagian header*/
+header { 
+}
+header h1 {
+    float: left;
+    padding: 15px 0;
+    color: #148f77;
+    
+}
+
+/* bagian header list*/
+header ul {
+    float: right;
+}
+header ul li {
+    display: inline-block;
+}
+header ul li a {
+    padding: 25px 20px;
+    display: inline-block;
+}
+header ul li a:hover {
+    background-color: #148f77;
+    color: white ;
+}
+.active {
+    background-color: #148f77;
+    color: white ;
+}
+
+/* bagian loader*/
+.bg-loader {
+    background-color: #eee;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.bg-loader .loader {
+    width: 100px;
+    height: 100px;
+    border: 3px solid white;
+    border-radius: 50%;
+    border-top-color: #148f77;
+    border-right-color: #148f77;
+    border-bottom-color: #148f77;
+    animation: puterin .8s linear infinite;
+}
+@keyframes puterin {
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+/* bagian foto atau background */
+.banner {
+    height: 60vh;
+    background-image: url(../Image/47.jpg);
+    background-size: cover;
+    background-repeat: repeat-x;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.banner h2 {
+    color: white;
+    padding: 20px 25px;
+    border: 3px solid white;
+    background-color: rgb (169, 169, 169);
+    font-style: italic;
+    font-size: 30px;
+}
+/*.banner:after {
+    content: " ";
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba (20, 147 119);
+}*/
+
+/* bagian yang dibungkus section*/
+section {
+    padding: 50px 0;
+    background-color: #f9f9f9;
+}
+
+section h3 {
+    text-align: center;
+    padding: 30px 0;
+    color: #148f77;
+    margin-bottom: 20px;
+    font-size: 2em;
+    font-style: italic;
+    /*background-color: rgb(11, 131, 139);*/
+}
+
+
+/* bagian paragraf dibagian about*/
+.about p {
+    color: #000000;
+    word-spacing: 2px;
+    line-height: 25px;
+    padding-bottom: 50px;
+    text-align: center;
+}
+
+.about,
+.contact,
+.message {
+    padding-bottom: 100px;
+}
+
+/* bagian contact*/
+.box {
+    color: #148f77;
+
+}
+.box::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+.box .col-4 {
+    width: 25%;
+    padding: 20px;
+    box-sizing: border-box;
+    text-align: center;
+    float: left;
+}
+.icon {
+    width: 70px;
+    height: 70px;
+    border: 1px solid;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 70px;
+    font-size: 50px;
+    margin: 0 auto;
+}
+.box .col-4 h4 {
+    margin: 20px 0;
+    padding-bottom: 25px;
+    
+}
+/*.contact ul li {
+    display: inline-block;
+    color: black;
+    margin: 10px;
+    padding: ce;
+}
+.contact {
+    padding: 50px;
+}*/
+
+/* bagian galeri*/
+.galeri {
+    margin: 0;
+    padding: 0;
+    box-sizing: 0;
+    font-family: sans-serif;
+
+}
+.album .heading {
+
+}
+.album .heading h3 {
+    font-size: 2em;
+    font-weight: bolder;
+    /*border-bottom: 3px solid rgb(11, 131, 139);*/
+    font-style: italic;
+}
+.album .box {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.album .box .Maw {
+    display: flex;
+    flex-direction: column;
+    width: 32%;
+}
+.album .box .Maw img {
+    width: 100%;
+    padding-bottom: 5%;
+    border-radius: 5px;
+}
+/* BAGIAN ALBUM YANG RESPONSIF*/
+/*@media only screen and (max-width: 769px) {
+    
+}
+
+/*.album .heading h3 span { font-weight: 1;}*/
+
+/*bagian message*/
+.message {
+    background-color: #f9f9f9;
+    text-align: center;
+    padding: 20px 0;
+    line-height: 30px;
+    text-decoration-style: solid;
+    padding-bottom: 100px;
+    word-spacing: 2px;
+}
+
+.message p {
+    text-align: center;
+    font-size: 18px;
+    word-spacing: 20px;
+}
+
+/* bagian footer*/
+footer { 
+    padding: 30px 0;
+    background-color: #148f77;
+    color: white;
+    text-align: center;
+}
+
+/* bagian java script*/
+
+/* bagian label*/
+.label {
+    background-color: #148f77;
+    color: white;
+}
+
+/* bagian gambar menu about*/
+.image {
+    text-align: center;
+
+}
+
+.album {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: 40px 20px 0 20px;
+
+}
+
+
+/* bagian contact*/
+.h4-contact {
+    text-align: center;
+    padding: 50px 0;
+}
+
+/*bagian responsif
+@media screen and (max-width: 922px ;) {
+    .container {
+        width: 90%;
+    }
+    header h1 {
+        text-align: center;
+        float: none;
+    }
+    .content, aside {
+        width: 100%; 
+    }
+    header ul {
+        text-align: center;
+        float: none;
+    }
+}
+*/
+@media screen and (max-width: 768px)  {
+    .container {
+        width: 90%;
+    }
+    header h1 {
+        text-align: center;
+        float: none;
+    }
+    header ul {
+        text-align: center;
+        float: none;
+    }
+    .box .col-4 {
+        width: 100%;
+        float: none;
+        margin-bottom: 20px;
+    }
+    image {
+        text-align: center;
+        float: none;
+    }
+    .message  {
+        width: 100%;
+        float: none;
+    }
+}    
+
+
+
+/* warna biru awal*/
+/*rgb(11, 131, 139)*/
